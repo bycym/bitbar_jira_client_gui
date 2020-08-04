@@ -1,6 +1,6 @@
 ######################################################################
 # Author : Aaron Benkoczy
-# Date : 2018.01.04.
+# Date : 2020.08.04.
 ######################################################################
 
 import fnmatch
@@ -64,10 +64,6 @@ class GuiPart:
     
     content = jira_noti.getParsedIssues()
     self.RefreshTree(content)
-    # self.GetData(content)
-    # master.after(15000, self.RefreshTree)
-    # master.mainloop();
-
 
   def processIncoming(self):
     """Handle all messages currently in the queue, if any."""
@@ -79,10 +75,6 @@ class GuiPart:
         pass
 
     logFile = ""
-
-  # refresh menu
-  # def RefreshMenu(self):
-  #   self.RefreshTree()
 
   # double click on a node
   def OnDoubleClick(self, event):
@@ -103,15 +95,7 @@ class GuiPart:
 
   def GetData(self, content):
     contentList = content.split("\n")
-    # tagTypes = set()
-    # the first root tag what shows "All Warnings"
-    # tagMap = {"[root]": 0}
-    # tagMap["[root]"] = self._tree.insert("", 0, "[root]", text="[All Warnings: 0]")
-    # tagIndex = 1
-
     tagMap = {}
-    # tagMap["[root]"] = self._tree.insert("", 0, "[root]", text="[All Warnings: 0]")
-
     tagIndex = 0
 
     # iterate throu the splitted elements
