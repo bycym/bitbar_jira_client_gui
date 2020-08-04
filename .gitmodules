@@ -1,0 +1,3 @@
+[submodule "bitbar_jira_client"]
+	path = bitbar_jira_client
+	url = https://github.com/bycym/bitbar_jira_client.git
